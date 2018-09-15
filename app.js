@@ -35,9 +35,14 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
 
 if(command === "yt") {
-  message.channel.send("**Hibás használat!** /yt <név>");
-    message.author.send(altgen());
-  }
+  message.channel.send("**Hibás használat!** Helyes használat: /yt <név> **PÉLDÁUL** /yt chlkrisz");
+}
+if(command === "yt szoulohun") {
+  message.channel.send("**Szoulo YT:** https://www.youtube.com/channel/UCOProuu11kDHFo9kT1paIHg");
+}
+if(command === "yt chlkrisz") {
+  message.channel.send("**Chlkrisz YT:** https://www.youtube.com/channel/UCb82WRTuK2X0xllzSVrZPHQ")  
+}
 });
 
   client.login(config.token);
