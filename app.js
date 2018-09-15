@@ -25,6 +25,15 @@ client.on("guildDelete", guild => {
   client.user.setActivity(` 000000111011000111100001101001000101000000  00001  00000  000000000000`);
 });
 
+client.on("message", async message => {
+
+  if(message.author.bot) return;
+
+  if(message.content.indexOf(config.prefix) !== 0) return;
+
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+
 if(command === "yt") {
   msg.reply('Nézd meg az üzeneteid!');
   message.author.send("**SZOULO Youtube:** https://www.youtube.com/channel/UCOProuu11kDHFo9kT1paIHg");
