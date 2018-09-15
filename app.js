@@ -27,7 +27,7 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
 
 if(command === "yt") {
-  message.channel.send("**" + message.author + "** Nézd meg a privát üzeneteid!");
+  message.channel.send("** $(message.author) ** Nézd meg a privát üzeneteid!");
   message.author.send("asd");
 }
 
