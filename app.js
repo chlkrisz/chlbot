@@ -35,8 +35,9 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
 
 if(command === "yt") {
-  message.channel.send("** ${message.author} ** Nézd meg a privát üzeneteid!");
-  message.author.send("asd");
+  msg.reply ("Nézd meg a privát üzeneteid!");
+  message.author.send("**SZOULO Youtube:** https://www.youtube.com/channel/UCOProuu11kDHFo9kT1paIHg");
+  message.author.send("**CHLKRISZ(TheCK) Youtube:** https://www.youtube.com/channel/UCb82WRTuK2X0xllzSVrZPHQ");
 }
 
 if(command === "help") {
