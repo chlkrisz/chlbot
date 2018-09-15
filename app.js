@@ -4,7 +4,7 @@ const config = require("./config.json");
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.user.setActivity(`Counter Strike - Global Offensive`);
+  client.user.setActivity(`/help`);
 });
 
 client.on("guildCreate", guild => {
@@ -27,14 +27,10 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
 
 if(command === "yt") {
-  message.channel.send("**Hibás használat!** Helyes használat: /yt <név> **PÉLDÁUL** /yt chlkrisz");
+  message.channel.send("**" + author + "** Nézd meg a privát üzeneteid!");
+  message.author.send("asd");
 }
-if(command === "yt szoulohun") {
-  message.channel.send("**Szoulo YT:** https://www.youtube.com/channel/UCOProuu11kDHFo9kT1paIHg");
-}
-if(command === "yt chlkrisz") {
-  message.channel.send("**Chlkrisz YT:** https://www.youtube.com/channel/UCb82WRTuK2X0xllzSVrZPHQ")  
-}
+
 if(command === "help") {
   message.channel.send("Parancsok:")
   message.channel.send("**/help** - Ez a panel")
