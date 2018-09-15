@@ -4,25 +4,13 @@ const config = require("./config.json");
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.user.setActivity(`-Chlbot ALPHA-`);
+  client.user.setActivity(`Minecraft`,``);
 });
 
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('Pong!');
   }
-});
-
-client.on("guildCreate", guild => {
-  console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-  client.user.setActivity(` 000000111011000111100001101001000101000000  00001  00000  000000000000`);
-});
-
-
-
-client.on("guildDelete", guild => {
-  console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-  client.user.setActivity(` 000000111011000111100001101001000101000000  00001  00000  000000000000`);
 });
 
 client.on("message", async message => {
@@ -39,6 +27,16 @@ if(command === "yt") {
   message.author.send("**SZOULO Youtube:** https://www.youtube.com/channel/UCOProuu11kDHFo9kT1paIHg");
   message.author.send("**CHLKRISZ(TheCK) Youtube:** https://www.youtube.com/channel/UCb82WRTuK2X0xllzSVrZPHQ");
 }
+  
+  client.on('message', message => {
+    // If the message is '!rip'
+    if (message.content === '!rip') {
+        // Create the attachment using Attachment
+        const attachment = new Attachment('https://i.imgur.com/w3duR07.png');
+        // Send the attachment in the message channel
+        message.channel.send(attachment);
+    }
+});
 
 if(command === "help") {
   message.channel.send("Parancsok:")
