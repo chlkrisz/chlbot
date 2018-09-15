@@ -14,7 +14,7 @@ client.on("guildCreate", guild => {
 
 client.on("guildDelete", guild => {
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-  client.user.setActivity(`Kódolás alatt...);
+  client.user.setActivity(`Kódolás alatt...`);
 });
 
 client.on("message", async message => {
