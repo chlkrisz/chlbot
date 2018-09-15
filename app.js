@@ -34,8 +34,8 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
-if(command === "generate") {
-  message.channel.send("**Generating alts...**");
+if(command === "yt") {
+  message.channel.send("**Hibás használat!** /yt <név>");
     message.author.send(altgen());
   }
 });
