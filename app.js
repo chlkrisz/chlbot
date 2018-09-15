@@ -4,7 +4,7 @@ const config = require("./config.json");
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.user.setActivity(` 000000111011000111100001101001000101000000  00001  00000  000000000000`);
+  client.user.setActivity(`CHLBOT 0.1 ALPHA`);
 });
 
 client.on('message', msg => {
