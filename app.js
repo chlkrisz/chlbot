@@ -7,6 +7,14 @@ client.on("ready", () => {
   client.user.setActivity(` 000000111011000111100001101001000101000000  00001  00000  000000000000`);
 });
 
+if (message.content === '/join') {
+    // Only try to join the sender's voice channel if they are in one themselves
+    if (message.member.voice.channel) {
+      const connection = await message.member.voice.channel.join();
+    } else {
+      message.reply('You need to join a voice channel first!');
+    }
+
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('Pong!');
