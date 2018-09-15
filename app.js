@@ -4,7 +4,7 @@ const config = require("./config.json");
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.user.setActivity(`Minecraft`,``);
+  client.user.setActivity(`Twitch`,`https://twitch.tv`);
 });
 
 client.on('message', msg => {
@@ -23,7 +23,6 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
 
 if(command === "yt") {
-  msg.reply('Nézd meg az üzeneteid!');
   message.author.send("**SZOULO Youtube:** https://www.youtube.com/channel/UCOProuu11kDHFo9kT1paIHg");
   message.author.send("**CHLKRISZ(TheCK) Youtube:** https://www.youtube.com/channel/UCb82WRTuK2X0xllzSVrZPHQ");
 }
