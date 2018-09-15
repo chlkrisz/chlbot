@@ -4,31 +4,7 @@ const config = require("./config.json");
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.user.setActivity(`CHLBOT 0.1 ALPHA`);
-});
-
-client.on('message', msg => {
-  if (msg.contains === 'baszd') {
-    msg.reply('Naa! Azért ne káromkodd ide a Dunát!');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.contains === 'kurva') {
-    msg.reply('Naa! Azért ne káromkodd ide a Dunát!');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.contains === 'geci') {
-    msg.reply('Naa! Azért ne káromkodd ide a Dunát!');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.contains === 'fasz') {
-    msg.reply('Naa! Azért ne káromkodd ide a Dunát!');
-  }
+  client.user.setActivity(`Chlbot 0.1 ALPHA - Készítette: chlkrisz`);
 });
 
 client.on('message', msg => {
