@@ -7,6 +7,12 @@ client.on("ready", () => {
   client.user.setActivity(`Kódolás alatt...`);
 });
 
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('Pong!');
+  }
+});
+
 client.on("guildCreate", guild => {
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
   client.user.setActivity(`Kódolás alatt...`);
