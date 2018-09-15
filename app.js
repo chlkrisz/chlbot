@@ -44,7 +44,7 @@ client.on("guildCreate", guild => {
 
 client.on('message', msg => {
   if (msg.content.startsWith(config.prefix+'join')) {
-    let [command, ...channelName] = msg.content.split(" ");
+    let [command, ...channelName] = msg.content.split("_");
     if (!msg.guild) {
       return msg.reply('no private service is available in your area at the moment. Please contact a service representative for more details.');
     }
