@@ -4,7 +4,7 @@ const config = require("./config.json");
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.user.setActivity(`/help`);
+  client.user.setActivity(`Kódolás alatt...`);
 });
 
 client.on("guildCreate", guild => {
@@ -14,7 +14,7 @@ client.on("guildCreate", guild => {
 
 client.on("guildDelete", guild => {
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-  client.user.setActivity(`CS:GO`);
+  client.user.setActivity(`Kódolás alatt...);
 });
 
 client.on("message", async message => {
