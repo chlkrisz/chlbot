@@ -9,7 +9,7 @@ client.on("ready", () => {
 
 client.on("guildCreate", guild => {
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-  client.user.setActivity(`CS:GO`);
+  client.user.setActivity(`Kódolás alatt...`);
 });
 
 client.on("guildDelete", guild => {
