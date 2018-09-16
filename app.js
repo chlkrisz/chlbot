@@ -23,16 +23,20 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
 
 if(command === "yt") {
+  message.author.send("**---**")
   message.channel.send(":white_check_mark: Üzenet elküldve.")
   message.author.send("**SZOULO Youtube:** https://www.youtube.com/channel/UCOProuu11kDHFo9kT1paIHg");
   message.author.send("**CHLKRISZ(TheCK) Youtube:** https://www.youtube.com/channel/UCb82WRTuK2X0xllzSVrZPHQ");
+  message.author.send("**---**")
 }
 
 if(command === "creator") {
   message.channel.send(":white_check_mark: Üzenet elküldve.")
+  message.author.send("**---**")
   message.author.send("**Készítő** Chlkrisz")
   message.author.send("**DISCORD** @Chlkrisz#1820");
   message.author.send("**Youtube** https://www.youtube.com/channel/UCb82WRTuK2X0xllzSVrZPHQ");
+  message.author.send("**---**")
 }
 
 if(command === "help") {
