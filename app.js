@@ -39,6 +39,7 @@ if(command === "creator") {
   message.author.send("**---**")
 }
 
+
 if(command === "help") {
   message.channel.send("Parancsok:")
   message.channel.send("**/help** - Ez a panel")
