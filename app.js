@@ -7,8 +7,9 @@ client.on("ready", () => {
   client.user.setActivity("SzouloHUN's live", {
     type: "WATCHING",
   });
+   client.user.setActivity("dnd");
 });
-  client.user.setActivity("dnd");
+
 
 client.on('message', msg => {
   if (msg.content === 'ping') {
