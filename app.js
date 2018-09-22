@@ -4,23 +4,19 @@ const config = require("./config.json");
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.user.setStatus("away");
-  client.user.setActivity("by chlkrisz");
+  client.user.setStatus("dnd");
+  client.user.setActivity("in development hell");
 });
 
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('Pong!');
   }
-});
-
-client.on('message', msg => {
   if (msg.content === 'fasz') {
     msg.reply('ne káromkodjál!');
     message.delete();
   }
 });
-
 client.on("message", async message => {
 
   if(message.author.bot) return;
