@@ -4,8 +4,10 @@ const config = require("./config.json");
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.user.setStatus("dnd");
-  client.user.setActivity("/help | KrisztoBot 1.0");
+  client.user.setActivity("KrisztoBot 1.0 - /help", {
+    type: "WATCHING",
+    url: "https://www.twitch.tv/chlkrisz"
+  });
 });
 
 client.on('message', msg => {
