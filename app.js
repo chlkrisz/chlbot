@@ -2,9 +2,16 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
 
+let statuses = ['KrisztoBot 1.0', 'Készítette chlkrisz', 'Segítséghez írd be, hogy /help'];
+
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-   client.user.setActivity("dnd", "in development hell");
+  setInverval(function() {
+    
+    let status = statuses[Math.floor(Math.random()*statuses.length)];
+    cleint.user.setPresence({ activity: {name: status}, status: 'dnd'});
+    
+  }, 3000);
 });
 
 
