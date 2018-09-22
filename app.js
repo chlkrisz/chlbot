@@ -17,7 +17,7 @@ client.on('message', msg => {
 client.on('message', msg => {
   if (msg.content === 'fasz') {
     msg.reply('ne káromkodjál!');
-    msg.remove();
+    message.delete();
   }
 });
 
