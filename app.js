@@ -12,10 +12,6 @@ client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('Pong!');
   }
-  if (msg.content === 'fasz') {
-    msg.reply('ne káromkodjál!');
-    message.delete();
-  }
 });
 client.on("message", async message => {
 
