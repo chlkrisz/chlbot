@@ -4,7 +4,10 @@ const config = require("./config.json");
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.user.setStatus('away', '');
+  client.user.setActivity("with depression", {
+     type: "STREAMING",
+     url: "https://www.twitch.tv/monstercat"
+  });
 });
 
 client.on('message', msg => {
