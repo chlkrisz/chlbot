@@ -4,11 +4,11 @@ const config = require("./config.json");
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.user.setActivity("KrisztoBot 1.0 - /help", {
+  client.user.setActivity("SzouloHUN's live", {
     type: "WATCHING",
-    url: "https://www.twitch.tv/chlkrisz"
   });
 });
+  client.user.setActivity("dnd");
 
 client.on('message', msg => {
   if (msg.content === 'ping') {
