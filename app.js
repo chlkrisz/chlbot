@@ -4,9 +4,9 @@ const config = require("./config.json");
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.user.setActivity("with depression", {
+  client.user.setActivity("Minecraft", {
      type: "STREAMING",
-     url: "https://www.twitch.tv/monstercat"
+     url: "https://www.youtube.com/channel/UCb82WRTuK2X0xllzSVrZPHQ"
   });
 });
 
