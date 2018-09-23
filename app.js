@@ -13,7 +13,7 @@ client.on("ready", () => {
     client.user.setPresence( game: { name: status }, status: 'online'});
     
     
-  }, 10000)
+  }, 10000);
 });
 
 
