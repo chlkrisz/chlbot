@@ -2,11 +2,9 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
 
-let statuses = ['KrisztoBot 1.0', 'Készítette chlkrisz', 'Segítséghez írd be, hogy /help'];
-
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  cleint.user.setPresence({ activity: {name: 'by TheCK'}, status: 'dnd'});
+  cleint.user.setPresence('Iratkozz fel');
 
 
 client.on('message', msg => {
