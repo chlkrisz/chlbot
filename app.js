@@ -6,13 +6,7 @@ let statuses = ['KrisztoBot 1.0', 'Készítette chlkrisz', 'Segítséghez írd b
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  setInverval(function() {
-    
-    let status = statuses[Math.floor(Math.random()*statuses.length)];
-    cleint.user.setPresence({ activity: {name: status}, status: 'dnd'});
-    
-  }, 3000);
-});
+  cleint.user.setPresence({ activity: {name: 'by TheCK'}, status: 'dnd'});
 
 
 client.on('message', msg => {
@@ -35,6 +29,19 @@ if(command === "yt") {
   message.author.send("**SZOULO Youtube:** https://www.youtube.com/channel/UCOProuu11kDHFo9kT1paIHg");
   message.author.send("**CHLKRISZ(TheCK) Youtube:** https://www.youtube.com/channel/UCb82WRTuK2X0xllzSVrZPHQ");
   message.author.send("**---**")
+}
+
+if (command === "test") {
+  channel.send({
+    embed:{
+      description: 'asd',
+      color: 0x1D82B6
+    })
+  
+  
+  }) 
+  
+  
 }
 
 if(command === "creator") {
