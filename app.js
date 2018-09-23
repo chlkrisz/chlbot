@@ -11,8 +11,8 @@ client.on("ready", () => {
 client.on('message', msg => {
   if (msg.content === 'ping') {
     message.channel.send({embed:{
-      title:"Pong!",
-      description:"ping-pong"
+      title: "Pong!",
+      description: "ping-pong",
       color: 0x17A589
     }})
   }
