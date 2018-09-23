@@ -2,9 +2,18 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
 
+let statuses = ['https://discord.gg/VSsuKgG', '/help'];
+
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  
+  setInverval(function() {
+    
+    let status = statuses[Math.floor(Math.random()*statuses.length)];
+    
+    client.user.setPresence( game: { name: status }, status: 'online'});
+    
+    
+  }, 10000)
 });
 
 
