@@ -14,7 +14,7 @@ client.on('message', msg => {
       title: "Pong!",
       description: "ping-pong",
       color: 0x17A589
-    }})
+    }});
   }
 });
 client.on("message", async message => {
