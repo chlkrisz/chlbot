@@ -30,15 +30,6 @@ if(command === "yt") {
   message.author.send("**---**")
 }
 
-if (command === "test") {
-  channel.send({
-    embed:{
-      description: 'asd',
-      color: 0x1D82B6
-    }
-  })
-}
-
 if(command === "creator") {
   message.channel.send(":white_check_mark: Üzenet elküldve.")
   message.author.send("**---**")
