@@ -8,15 +8,6 @@ client.on("ready", () => {
 });
 
 
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    message.channel.send({embed:{
-      title: "Pong!",
-      description: "ping-pong",
-      color: 0x17A589
-    }});
-  }
-});
 client.on("message", async message => {
 
   if(message.author.bot) return;
