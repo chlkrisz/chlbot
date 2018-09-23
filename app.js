@@ -37,11 +37,6 @@ if (command === "test") {
       description: 'asd',
       color: 0x1D82B6
     })
-  
-  
-  }) 
-  
-  
 }
 
 if(command === "creator") {
