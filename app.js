@@ -10,13 +10,6 @@ client.on("ready", () => {
 client.on("message", async message => {
 
   if(message.author.bot) return;
-    let banEmbed = new Discord.RichEmbed()
-        .setDescription("Информация о бане")
-        .setColor("#e56b00")
-        .addField("Кого забанили", `${bUser} Его ID ${bUser.id}`)
-        .addField("Был забанен тут!", message.channel)
-        .addField("Во сколька", message.createdAt)
-        .addField("Причина", breason);
   
   if(message.content.indexOf(config.prefix) !== 0) return;
 
