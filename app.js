@@ -19,10 +19,8 @@ client.on("message", async message => {
 
 if(command === "yt") {
   var ytembed = new Discord.RichEmbed()
-  .addField('Szoulo YT')
-  .setValue('https://www.youtube.com/channel/UCOProuu11kDHFo9kT1paIHg')
-  .addField('Chlkrisz YT')
-  .setValue('https://www.youtube.com/channel/UCb82WRTuK2X0xllzSVrZPHQ')
+  .addField('Szoulo YT', 'https://www.youtube.com/channel/UCOProuu11kDHFo9kT1paIHg')
+  .addField('Chlkrisz YT', 'https://www.youtube.com/channel/UCb82WRTuK2X0xllzSVrZPHQ')
   .setColor('RANDOM')
 //  message.author.send("**---**")
 //  message.channel.send(":white_check_mark: Üzenet elküldve.")
