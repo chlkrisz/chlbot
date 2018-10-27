@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const config = require("./config.json");
 
 client.on("ready", () => {
-  client.user.setActivity('/help', {type: "STREAMING", url: "https://www.twitch.tv/mrmuffinkappa"});
+  client.user.setActivity('/help', {type: "LISTENING", url: "https://www.twitch.tv/mrmuffinkappa"});
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
 });
 
