@@ -18,12 +18,16 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
 
 if(command === "yt") {
-  message.author.send("**---**")
-  message.channel.send(":white_check_mark: Üzenet elküldve.")
-  message.author.send("**SZOULO Youtube:** https://www.youtube.com/channel/UCOProuu11kDHFo9kT1paIHg");
-  message.author.send("**CHLKRISZ(TheCK) Youtube:** https://www.youtube.com/channel/UCb82WRTuK2X0xllzSVrZPHQ");
-  message.author.send("**---**")
-  message.author.send(banEmbed);
+  var ytembed = new Discord.RichEmbed()
+  .addField('Szoulo YT: https://www.youtube.com/channel/UCOProuu11kDHFo9kT1paIHg')
+  .addField('Chlkrisz YT: https://www.youtube.com/channel/UCb82WRTuK2X0xllzSVrZPHQ')
+//  message.author.send("**---**")
+//  message.channel.send(":white_check_mark: Üzenet elküldve.")
+//  message.author.send("**SZOULO Youtube:** https://www.youtube.com/channel/UCOProuu11kDHFo9kT1paIHg");
+//  message.author.send("**CHLKRISZ(TheCK) Youtube:** https://www.youtube.com/channel/UCb82WRTuK2X0xllzSVrZPHQ");
+//  message.author.send("**---**")
+//  message.author.send(banEmbed);
+  message.author.send(ytembed)
 }
 
 if(command === "creator") {
